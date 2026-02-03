@@ -1,0 +1,128 @@
+/* App.css */
+
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --border: #e6e6e6;
+  --text: #1b1b1b;
+  --muted: #666;
+  --primary: #b30000;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 16px 60px;
+}
+
+.app-title {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--primary);
+  margin: 10px 0 24px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.card h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #999;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  background: var(--primary);
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-dark {
+  background: #111;
+}
+
+.donor-box {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.row-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.action {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.action-call {
+  background: #0b5cff;
+}
+
+.action-wa {
+  background: #22c55e;
+}
+
+.small-muted {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
